@@ -71,8 +71,8 @@
             Check out some recipes we've collected for your home-brewing
             convenience:
           </p>
-          <div class="recipes__videos">
-            <div>
+          <ul class="recipes__videos">
+            <li>
               <iframe
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=js5uTvEoRBrt-cKx"
                 title="YouTube video player"
@@ -80,9 +80,11 @@
                 allowfullscreen
                 class="recipes__iframe"
               ></iframe>
-              <p class="recipes__videos-caption">Aeropress recipe ~5min</p>
-            </div>
-            <div>
+              <p class="recipes__videos-caption">
+                <span>Aeropress recipe</span><span> ~5min</span>
+              </p>
+            </li>
+            <li>
               <iframe
                 src="https://www.youtube.com/embed/st571DYYTR8?si=-dKTW0S_M9CSIwm6"
                 title="YouTube video player"
@@ -90,9 +92,11 @@
                 allowfullscreen
                 class="recipes__iframe"
               ></iframe>
-              <p class="recipes__videos-caption">French press recipe ~15min</p>
-            </div>
-          </div>
+              <p class="recipes__videos-caption">
+                <span>French press recipe</span><span> ~15min</span>
+              </p>
+            </li>
+          </ul>
         </section>
         <section class="reservation" id="reservation-section">
           <h2 class="reservation__title">Book a table</h2>
@@ -109,6 +113,7 @@
               <label for="guests" class="form__label">Number of guests *</label>
               <input
                 type="number"
+                required
                 class="form__input"
                 id="guests"
                 placeholder="1-8"
@@ -125,14 +130,15 @@
               <label for="email" class="form__label">Your email *</label>
               <input
                 type="email"
+                required
                 class="form__input"
                 id="email"
                 placeholder="email@email.com"
               />
             </fieldset>
-            <button class="form__button">Book a table</button>
+            <button class="form__button" type="submit">Book a table</button>
             <label class="form__label form__label_type_checkbox">
-              <input type="checkbox" class="form__checkbox" />
+              <input type="checkbox" class="form__checkbox" required />
               I agree with the terms of use
             </label>
           </form>
@@ -240,7 +246,7 @@
             <h3 class="footer__social-heading">Social media</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="" class="footer__social-link"
+                <a href="#" class="footer__social-link"
                   ><img
                     src="images/facebook_white.svg"
                     alt="facebook logo"
@@ -249,7 +255,7 @@
                 >
               </li>
               <li class="footer__list-item">
-                <a href="" class="footer__social-link">
+                <a href="#" class="footer__social-link">
                   <img
                     src="images/instagram_white.svg"
                     alt="instagram logo"
