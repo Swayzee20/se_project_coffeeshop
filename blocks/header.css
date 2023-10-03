@@ -31,6 +31,10 @@
 .nav__link {
   color: #000;
   text-decoration: none;
+  transition: 0.2s;
+}
+.nav__link:hover {
+  color: #2f80ed;
 }
 .header__title {
   max-width: 729px;
@@ -61,7 +65,6 @@
   position: absolute;
   width: 646px;
   height: 568px;
-  display: inline;
   right: 5px;
   top: 124px;
 }
